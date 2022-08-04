@@ -30,11 +30,12 @@
             <div class="mt-3 d-flex justify-content-end">
               <button class="btn btn-primary text-white"><b>Submit!</b></button>
             </div>
-            <form action="">
+            <form action="" onsubmit="app.giftsController.getGifts()">
               <div>
                 <label class="list-label mt-3" for="search">Search Gif</label>
                 <input class="form-control" type="text" id="search" name="search"
-                  onsubmit="app.giftsController.getGifts()">
+                  >
+                  <button class="btn btn-success">search</button>
               </div>
               <div class="mt-3 d-flex justify-content-end">
                 <button class="btn btn-primary text-white"><b>Submit!</b></button>
