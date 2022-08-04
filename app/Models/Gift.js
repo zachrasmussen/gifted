@@ -8,7 +8,7 @@ export class Gift {
     get Template() {
         return `
     <div>
-        ${this.img}
+    <img src="${this.img}" alt=""> 
     </div>
     `
     }
