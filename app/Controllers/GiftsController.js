@@ -1,15 +1,17 @@
 import { Pop } from "../Utils/Pop.js"
+import { giftsService } from "../Services/GiftsService.js";
+
 
 
 export class GiftsController{ 
     constructor(){ 
-        this.getGifts
+        this.getGifts()
     }
 
     async getGifts(){
         try {
             await giftsService.getGifts()
-            console.log('controller getgifts loaded')
+            console.log('controller get gifts loaded')
         } catch (error) {
             Pop.error(error)
             console.log('[Get Gifts]', error)
