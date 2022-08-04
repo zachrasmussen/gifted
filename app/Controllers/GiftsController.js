@@ -9,6 +9,7 @@ export class GiftsController{
     async getGifts(){
         try {
             await giftsService.getGifts()
+            console.log('controller getgifts loaded')
         } catch (error) {
             Pop.error(error)
             console.log('[Get Gifts]', error)

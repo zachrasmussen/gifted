@@ -1,5 +1,5 @@
 export class Gift{
-    constructor(){
-        
+    constructor(data){
+    this.meta = data.meta
     }
  }

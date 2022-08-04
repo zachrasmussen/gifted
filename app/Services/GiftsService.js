@@ -4,9 +4,8 @@ import { giftsApi } from "./AxiosService.js"
 
 class GiftsService{
     async getGifts(){ 
-        let res = await giftsApi.get('/gifs')
+        let res = await giftsApi.get('')
         console.log(res.data)
-      
     }
 
 }
