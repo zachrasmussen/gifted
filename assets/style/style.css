@@ -1,1 +1,11 @@
 /* BASIC STYLES HERE */
+.b-green {
+    background-color: green;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.c-font {
+    font-family: 'Kreon', serif;
+    font-size: 48px;
+}
