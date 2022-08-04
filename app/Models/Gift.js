@@ -1,13 +1,15 @@
-export class Gift{
-    constructor(data){
-    this.img = data.images.downsized.url,
-    this.url = data.url,
-    this.id = data.id
+export class Gift {
+    constructor(data) {
+        this.img = data.images.downsized.url,
+            this.url = data.url,
+            this.id = data.id
     }
 
-get Template() { 
-    return`
-    
+    get Template() {
+        return `
+    <div>
+        ${this.img}
+    </div>
     `
+    }
 }
- }
