@@ -12,9 +12,11 @@ function _drawGifts() {
     document.getElementById('searched-gift').innerHTML = template
 }
 
+
 export class GiftsController {
     constructor() {
         ProxyState.on('gifts', _drawGifts)
+        ProxyState.on('gifts', this.previewSelected)
     }
 
     async getGifts() {
@@ -27,4 +29,12 @@ export class GiftsController {
             console.log('[Get Gifts]', error)
         }
     }
+    previewSelected(){
+        giftsService.previewSelected()
+    }
+
+
+    // setActiveGift(id){
+    //     giftsService.setActiveGift(id)
+    // }
 }
