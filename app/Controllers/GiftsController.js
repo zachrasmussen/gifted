@@ -16,7 +16,6 @@ function _drawGifts() {
 export class GiftsController {
     constructor() {
         ProxyState.on('gifts', _drawGifts)
-        ProxyState.on('gifts', this.previewSelected)
     }
 
     async getGifts() {
