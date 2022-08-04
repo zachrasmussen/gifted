@@ -14,8 +14,8 @@ class GiftsService {
             } 
 
         })
-        console.log(res.data);
-    ProxyState.gifts = res.data.map(g => new Gift(g))
+        console.log(res.data.data);
+    ProxyState.gifts = res.data.data.map(g => new Gift(g))
     }
 
 }
