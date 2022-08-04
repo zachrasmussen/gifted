@@ -9,7 +9,7 @@ class GiftsService {
                 key: 'bjrxrpUa717fzgdLicV6jaGFsJaZsWuY',
                 limit: 5,
                 rating: 'pg',
-                q: 'cats'
+                q: query
             } 
         })
         console.log(res.data)

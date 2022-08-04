@@ -5,12 +5,12 @@ import { giftsService } from "../Services/GiftsService.js";
 
 export class GiftsController{ 
     constructor(){ 
-        this.getGifts()
+        this.getGifts(query)
     }
 
-    async getGifts(){
+    async getGifts(query){
         try {
-            await giftsService.getGifts()
+            await giftsService.getGifts(query)
             console.log('controller get gifts loaded')
         } catch (error) {
             Pop.error(error)
