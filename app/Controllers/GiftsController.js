@@ -3,12 +3,12 @@ import { giftsService } from "../Services/GiftsService.js";
 import { ProxyState } from "../AppState.js";
 
 function _drawGifts() {
-    let gift = ProxyState.gift
-    if (!gift) {
+    let gifts = ProxyState.gifts
+    if (!gifts) {
         return
     }
     let template = ''
-    gift.forEach(g => template += g.Template)
+    gifts.forEach(g => template += g.Template)
     document.getElementById('searched-gift').innerHTML = template
 }
 
