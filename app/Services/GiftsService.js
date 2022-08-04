@@ -1,4 +1,5 @@
 import { ProxyState } from "../AppState.js"
+import { Gift } from "../Models/Gift.js"
 import { giftsApi } from "./AxiosService.js"
 
 
@@ -11,8 +12,10 @@ class GiftsService {
                 rating: 'pg',
                 q: query
             } 
+
         })
-        console.log(res.data)
+        console.log(res.data);
+    ProxyState.gifts = res.data.map(g => new Gift(g))
     }
 
 }
