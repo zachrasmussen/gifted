@@ -18,7 +18,9 @@ class GiftsService {
     }
 
     previewSelected(){
-        document.getElementById('url-preview').textContent = ProxyState.gifts.url
+        let url = ProxyState.gifts.url 
+        console.log('url')
+        document.getElementById('url-preview').textContent = url
         ProxyState.gifts = ProxyState.gifts
     }
 

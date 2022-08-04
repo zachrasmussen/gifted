@@ -7,7 +7,7 @@ export class Gift {
 
     get Template() {
         return `
-    <div>
+    <div onclick="app.giftsController.previewSelected()">
     <img src="${this.img}" alt=""> 
     </div>
     `
